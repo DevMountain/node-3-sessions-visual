@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+:root {
+  --app-bg: #dddddb;
+  --secondary-bg: #dddddb;
+  --main-bg: #ffffff;
+  --fontFam: 'Roboto', sans-serif;
+  --fontSize: 14px;
+}
+
+.app {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--app-bg);
+  padding: 20px;
+  box-sizing: border-box;
+  font-family: var(--fontFam);
+}
+.content {
+  width: 100%;
+  height: 100%;
+  background-color: var(--main-bg);
+  border-radius: 2px;
+  padding: 20px 20px 80px 20px;
+  box-sizing: border-box;
+  position: relative;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px;
+}
+
+.messages-wrapper {
+  width: 100%;
+  height: 100%;
+  background-color: var(--secondary-bg);
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+.input-wrapper {
+  width: 100%;
+  height: 50px;
+  background: var(--main-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 14px;
+  left: 0px;
+}
+
+.input-wrapper input {
+  padding-left: 5px;
+}
+
+.input-username {
+  height: 30px;
+  background-color: var(--main-bg);
+  border: none;
+  border-bottom: 1px solid #2a2b2c;
+}
+
+.input-message {
+  width: 50%;
+  height: 30px;
+  background-color: var(--main-bg);
+  border: none;
+  border-bottom: 1px solid #2a2b2c;
+}
+
+button {
+  padding: 8px 16px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: var(--fontSize);
+  margin-left: 10px;
+}
+
+.button-username {
+  margin-right: 20px;
+}
+
+.button-disabled {
+  background-color: var(--secondary-bg);
+}
+
+.message {
+  width: 100%;
+  background-color: var(--main-bg);
+  display: flex;
+  flex-direction: column;
+  border-radius: 2px;
+  margin-bottom: 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px;
+}
+.message span {
+  margin: 5px 10px;
+}
+
+.instructions {
+  padding: 10px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+}
+/* .message span:first-child {
+  color: grey;
+} */
